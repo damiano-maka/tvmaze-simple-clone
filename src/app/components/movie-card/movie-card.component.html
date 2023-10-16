@@ -1,0 +1,10 @@
+
+<div class="card m-2"  *ngFor="let m of movies">
+      <img src="{{m.image.medium}}" class="card-img-top" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">{{m.name}}</h5>
+      <span><p>Rating:  <b [ngClass]="coloreVoti(m.rating.average!)">{{m.rating.average}}</b></p></span>
+      <button type="button" class="btn btn-primary" (click)="onCardClick(m.id)">Guarda Ora</button>
+  </div>
+</div>
+

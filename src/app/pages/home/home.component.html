@@ -1,0 +1,7 @@
+
+<div class="row m2">
+  <input class="form-control m-2 p-2 me-2" [(ngModel)]="filtroPerNome" type="text" placeholder="Search by name">
+  <div class="col-md-2 col-ms-3 col-sm-12" *ngFor="let mov of filterByNomeS(filtroPerNome)">
+    <app-movie-card [movies]="[mov]" (cardClicked)="onCardClicked($event)"></app-movie-card>
+  </div>
+</div>
