@@ -27,7 +27,6 @@ export class DetailsComponent {
       )
     ).subscribe((data : singoloMovie) => {
       this.datiMovie = data;
-      console.log(this.datiMovie);
     })
    
     
